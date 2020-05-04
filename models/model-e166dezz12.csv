@@ -1,8 +1,0 @@
-3,1000,576,cosine_proximity,Adagrad,5,5
-flatten
-flatten
-dropout,0.500000
-dropout,0.500000
-conv2d,linear,4,l2,0.000500
-flatten
-conv2d,softsign,512,l2,0.000800

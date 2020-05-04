@@ -1,8 +1,0 @@
-3,1000,391,poisson,Adam,5,5
-maxpooling2d,8,8
-flatten
-flatten
-flatten
-dropout,0.500000
-maxpooling2d,8,8
-conv2d,sigmoid,8,l2,0.000900

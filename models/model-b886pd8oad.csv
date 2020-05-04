@@ -1,8 +1,0 @@
-3,1000,1307,categorical_crossentropy,Adam,3,3
-dense,relu,8
-dropout,0.250000
-flatten
-maxpooling2d,2,2
-dense,tanh,64
-dense,elu,256
-conv2d,elu,64,l1,0.000800

@@ -1,0 +1,8 @@
+3,1000,921,mean_absolute_percentage_error,RMSprop
+dropout,0.250000
+conv2d,exponential,16,9,9,,
+dense,linear,1024
+conv2d,softplus,16,3,3,l1,0.0008
+flatten
+conv2d,exponential,16,7,7,l2,0.0006
+dense,selu,128

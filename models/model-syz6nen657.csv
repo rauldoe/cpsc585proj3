@@ -1,8 +1,0 @@
-3,1000,898,huber_loss,SGD,5,5
-dropout,0.500000
-flatten
-conv2d,linear,512,l1,0.000900
-dense,relu,32
-conv2d,hard_sigmoid,256,l1,0.000700
-dropout,0.250000
-conv2d,elu,1024,l1,0.000200

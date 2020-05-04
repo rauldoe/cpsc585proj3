@@ -1,0 +1,8 @@
+3,1000,630,hinge,Adagrad
+flatten
+dense,softmax,512
+dropout,0.250000
+conv2d,softmax,16,1,1,l1,0.0002
+dense,linear,32
+dense,softsign,128
+conv2d,selu,64,9,9,l1,0.0009

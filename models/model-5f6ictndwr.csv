@@ -1,8 +1,0 @@
-3,1000,92,cosine_proximity,Adadelta,5,5
-dense,softsign,128
-dense,exponential,256
-flatten
-conv2d,elu,8,l2,0.000300
-flatten
-conv2d,hard_sigmoid,16,l2,0.000800
-dense,softsign,4

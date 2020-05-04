@@ -1,8 +1,0 @@
-3,1000,931,squared_hinge,SGD,3,3
-dense,softsign,64
-dropout,0.250000
-dropout,0.500000
-maxpooling2d,8,8
-conv2d,sigmoid,4,l2,0.000100
-dropout,0.500000
-dense,relu,8

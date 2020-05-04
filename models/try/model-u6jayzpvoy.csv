@@ -1,0 +1,8 @@
+3,1000,1124,sparse_categorical_crossentropy,Adam
+dropout,0.250000
+flatten
+conv2d,exponential,2048,7,7,,
+dropout,0.500000
+conv2d,linear,4,1,1,l2,0.0001
+dense,sigmoid,32
+dense,relu,128

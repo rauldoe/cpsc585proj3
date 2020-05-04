@@ -47,6 +47,7 @@ class Generator:
     def load(self):
         self.activations = Utility.readCsv(self.choiceDir+'activations.csv')
         self.kernelRegularizers = Utility.readCsv(self.choiceDir+'kernel_regularizers.csv')
+        self.kernelRegularizers.append([''])
         self.kernalSizes = Utility.readCsv(self.choiceDir+'kernel_sizes.csv')       
         self.layers = Utility.readCsv(self.choiceDir+'layers.csv')
         self.losses = Utility.readCsv(self.choiceDir+'losses.csv')
@@ -69,9 +70,14 @@ class Generator:
         if (layer.layerName == 'conv2d'):
             layer.activationFunction = Utility.getRandom(self.activations)[0]
             layer.filterCount = int(Utility.getRandom(self.filterCount)[0])
+            kernelSize = Utility.getRandom(self.kernalSizes)
+            layer.kernelSize = (int(kernelSize[0]), int(kernelSize[1]))
             layer.kernelRegularizer = Utility.getRandom(self.kernelRegularizers)[0]
-            layer.kernelRegularizerValue = Utility.randomFloat(self.ranges, 'kernelRegularizerValue')
-            output = '%s,%s,%d,%s,%f'%(layer.layerName, layer.activationFunction, layer.filterCount, layer.kernelRegularizer, layer.kernelRegularizerValue )
+            if (layer.kernelRegularizer == ''):
+                layer.kernelRegularizerValue = ''
+            else:
+                layer.kernelRegularizerValue = Utility.randomFloat(self.ranges, 'kernelRegularizerValue')
+            output = '%s,%s,%d,%d,%d,%s,%s'%(layer.layerName, layer.activationFunction, layer.filterCount, layer.kernelSize[0], layer.kernelSize[1], layer.kernelRegularizer, layer.kernelRegularizerValue )
         elif (layer.layerName == 'maxpooling2d'):
             layer.maxPooling2d = Utility.getRandom(self.maxPooling2d)
             output = '%s,%d,%d'%(layer.layerName, int(layer.maxPooling2d[0]), int(layer.maxPooling2d[1]))
@@ -100,10 +106,9 @@ class Generator:
         md.batchSize = Utility.randomInt(self.ranges, 'batchSize')
         md.loss = Utility.getRandom(self.losses)[0]
         md.optimizer = Utility.getRandom(self.optimizers)[0]
-        md.kernelSize = Utility.getRandom(self.kernalSizes)
         md.layerCount = Utility.randomInt(self.ranges, 'layerCount')
 
-        output = '%d,%d,%d,%s,%s,%d,%d'%(md.processCount, md.epochCount, md.batchSize, md.loss, md.optimizer, int(md.kernelSize[0]), int(md.kernelSize[1]))
+        output = '%d,%d,%d,%s,%s'%(md.processCount, md.epochCount, md.batchSize, md.loss, md.optimizer)
         md.outputList.append(output)
 
         for i in range(md.layerCount):
@@ -118,6 +123,7 @@ class LayerDescriptor:
         self.layerName = layerName
         self.activationFunction = None
         self.filterCount = None
+        self.kernelSize = None
         self.kernelRegularizer = None
         self.kernelRegularizerValue = None
         self.maxPooling2d = None
@@ -130,7 +136,6 @@ class ModelDescriptor:
         self.batchSize = None
         self.loss = None
         self.optimizer = None
-        self.kernelSize = None
         self.layerCount = None
         self.layers = []
 

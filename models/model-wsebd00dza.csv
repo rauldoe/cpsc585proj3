@@ -1,8 +1,0 @@
-3,1000,354,categorical_hinge,Adadelta,5,5
-dropout,0.500000
-dropout,0.500000
-maxpooling2d,8,8
-conv2d,sigmoid,16,l1,0.000700
-dropout,0.500000
-dropout,0.250000
-conv2d,sigmoid,256,l1,0.000200

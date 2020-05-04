@@ -1,8 +1,0 @@
-3,1000,1538,is_categorical_crossentropy,Adam,3,3
-maxpooling2d,2,2
-flatten
-flatten
-conv2d,selu,128,l1,0.000700
-maxpooling2d,8,8
-flatten
-dense,softsign,16

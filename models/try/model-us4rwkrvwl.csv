@@ -1,0 +1,8 @@
+3,1000,1243,categorical_crossentropy,Adagrad
+conv2d,relu,32,7,7,l2,0.0005
+flatten
+maxpooling2d,8,8
+conv2d,softmax,4,5,5,l2,0.001
+dropout,0.250000
+flatten
+dense,hard_sigmoid,256

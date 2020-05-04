@@ -1,5 +1,0 @@
-3,1000,1995,categorical_crossentropy,SGD,1,1
-conv2d,tanh,8,l2,0.001000
-flatten
-dropout,0.200000
-conv2d,hard_sigmoid,128,l2,0.000700

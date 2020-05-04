@@ -1,8 +1,0 @@
-3,1000,1360,cosine_proximity,Adam,3,3
-dropout,0.500000
-dense,softsign,32
-dense,exponential,256
-flatten
-flatten
-dense,hard_sigmoid,32
-conv2d,sigmoid,2048,l2,0.000700

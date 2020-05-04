@@ -1,0 +1,8 @@
+3,1000,693,logcosh,RMSprop
+dropout,0.500000
+conv2d,exponential,8,1,1,l2,0.001
+flatten
+conv2d,softmax,1024,9,9,l2,0.0002
+conv2d,selu,64,3,3,,
+conv2d,sigmoid,128,3,3,l1,0.0001
+dense,elu,64

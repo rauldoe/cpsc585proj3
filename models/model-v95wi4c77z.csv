@@ -1,8 +1,0 @@
-3,1000,1049,mean_absolute_error,Adamax,1,1
-conv2d,softplus,2048,l1,0.000200
-maxpooling2d,2,2
-maxpooling2d,8,8
-maxpooling2d,4,4
-maxpooling2d,4,4
-maxpooling2d,8,8
-conv2d,softsign,16,l2,0.001000

@@ -48,6 +48,9 @@ class LayerDescriptor:
         self.data = ','.join(inputList)
         self.index = index
         self.descriptionCount = descriptionCount
+        self.Activation = None
+        self.FilterCount = None
+        self.KernelSize = None
 
     def build(self):
         layerType = self.LayerType
@@ -56,13 +59,13 @@ class LayerDescriptor:
         if (layerType == 'conv2d'):
             self.Activation = inputList[1]
             self.FilterCount = int(inputList[2])
+            self.KernelSize = (int(inputList[3]), int(inputList[4]))
 
             kernelRegularizer = LayerDescriptor.kernelRegularizer(inputList[3], inputList[4])
-            layer = Conv2D(self.FilterCount, kernel_size=self.modelDescriptor.kernelSize, activation=self.Activation, kernel_regularizer=kernelRegularizer, input_shape=self.modelDescriptor.inputShape.normalized())
-            # if (self.index == 0):
-            #     layer = Conv2D(self.FilterCount, kernel_size=self.modelDescriptor.kernelSize, activation=self.Activation, kernel_regularizer=kernelRegularizer, input_shape=self.modelDescriptor.inputShape.normalized())
-            # else:
-            #     layer = Conv2D(self.FilterCount, kernel_size=self.modelDescriptor.kernelSize, activation=self.Activation, kernel_regularizer=kernelRegularizer)
+            if (self.index == 0):
+                layer = Conv2D(self.FilterCount, kernel_size=self.KernelSize, activation=self.Activation, kernel_regularizer=kernelRegularizer, input_shape=self.modelDescriptor.inputShape.normalized())
+            else:
+                layer = Conv2D(self.FilterCount, kernel_size=self.KernelSize, activation=self.Activation, kernel_regularizer=kernelRegularizer)
 
         elif (self.LayerType == 'maxpooling2d'):
             layer = MaxPooling2D(pool_size=(int(inputList[1]), int(inputList[2])))
@@ -118,7 +121,7 @@ class ModelDescriptor:
         self.descriptions = descriptions
         self.threshholdAccuracy = threshholdAccuracy
 
-        # processCount, epochCount, batchSize, kernelRegularizer, kernelRegularizerValue, loss, optimizer, kernelSizex, kernelSizey
+        # processCount, epochCount, batchSize, kernelRegularizer, kernelRegularizerValue, loss, optimizer
         i = -1
 
         i += 1
@@ -131,11 +134,6 @@ class ModelDescriptor:
         self.loss = hyperparameters[i]
         i += 1
         self.optimizer = hyperparameters[i]
-        i += 1
-        x = i
-        i += 1
-        y = i
-        self.kernelSize = (int(hyperparameters[x]), int(hyperparameters[y]))
 
         self.inputShape = inputShape
         self.numberOfClasses = numberOfClasses

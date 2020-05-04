@@ -1,0 +1,8 @@
+3,1000,1964,categorical_crossentropy,Adam
+conv2d,tanh,16,5,5,,
+conv2d,linear,1024,7,7,,
+flatten
+conv2d,selu,16,5,5,l1,0.0008
+conv2d,hard_sigmoid,8,3,3,l2,0.0001
+flatten
+dense,softsign,128

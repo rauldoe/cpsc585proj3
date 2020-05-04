@@ -1,8 +1,0 @@
-3,1000,112,categorical_hinge,Adamax,1,1
-maxpooling2d,4,4
-flatten
-dense,selu,64
-dropout,0.500000
-maxpooling2d,2,2
-flatten
-conv2d,relu,64,l2,0.000700

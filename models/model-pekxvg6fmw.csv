@@ -1,8 +1,0 @@
-3,1000,1291,huber_loss,SGD,3,3
-dropout,0.500000
-dropout,0.500000
-conv2d,selu,128,l2,0.000300
-conv2d,selu,1024,l1,0.000100
-dense,sigmoid,256
-maxpooling2d,4,4
-conv2d,linear,8,l1,0.000800

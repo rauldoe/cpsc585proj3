@@ -1,9 +1,0 @@
-3,1000,1945,categorical_hinge,Nadam,3,3
-conv2d,softplus,16,l1,0.000300
-maxpooling2d,8,8
-conv2d,softplus,4,l2,0.000800
-maxpooling2d,2,2
-conv2d,sigmoid,128,l1,0.000300
-dense,tanh,32
-flatten
-dense,relu,1024

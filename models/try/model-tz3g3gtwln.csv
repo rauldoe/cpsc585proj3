@@ -1,0 +1,8 @@
+3,1000,631,squared_hinge,Adagrad
+flatten
+maxpooling2d,8,8
+conv2d,selu,256,9,9,,
+conv2d,elu,256,7,7,,
+dense,selu,128
+conv2d,relu,4,5,5,,
+conv2d,selu,16,5,5,,

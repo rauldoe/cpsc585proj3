@@ -1,8 +1,0 @@
-3,1000,1788,hinge,Adamax,5,5
-dense,relu,1024
-dropout,0.500000
-flatten
-dense,softplus,512
-conv2d,elu,512,l1,0.000300
-conv2d,selu,256,l1,0.000900
-dense,sigmoid,32

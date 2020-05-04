@@ -1,8 +1,0 @@
-3,1000,871,poisson,RMSprop,5,5
-dropout,0.500000
-dense,selu,4
-flatten
-dense,softmax,1024
-conv2d,softplus,512,l1,0.000500
-dense,sigmoid,512
-dense,elu,32

@@ -1,0 +1,8 @@
+3,1000,1574,mean_squared_logarithmic_error,SGD
+conv2d,hard_sigmoid,32,3,3,l1,0.0008
+flatten
+dense,sigmoid,16
+conv2d,relu,4,7,7,,
+flatten
+dense,softmax,256
+dense,softsign,16

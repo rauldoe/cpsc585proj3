@@ -1,8 +1,0 @@
-3,1000,614,mean_absolute_error,Adam,7,7
-maxpooling2d,2,2
-dropout,0.500000
-flatten
-conv2d,softmax,64,l1,0.000200
-conv2d,selu,64,l1,0.000900
-dropout,0.500000
-conv2d,sigmoid,2048,l1,0.000900

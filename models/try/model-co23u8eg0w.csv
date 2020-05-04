@@ -1,0 +1,8 @@
+3,1000,912,huber_loss,Adadelta
+flatten
+conv2d,elu,256,1,1,,
+dense,exponential,32
+dropout,0.250000
+conv2d,softplus,1024,9,9,l2,0.0006
+dropout,0.250000
+conv2d,linear,512,3,3,,

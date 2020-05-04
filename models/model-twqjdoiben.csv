@@ -1,8 +1,0 @@
-3,1000,827,huber_loss,Adam,3,3
-dropout,0.500000
-flatten
-maxpooling2d,8,8
-flatten
-flatten
-maxpooling2d,2,2
-dense,exponential,8

@@ -1,8 +1,0 @@
-3,1000,1223,categorical_crossentropy,Adamax,1,1
-dropout,0.250000
-conv2d,selu,16,l2,0.000400
-dropout,0.250000
-dense,softplus,8
-conv2d,tanh,16,l1,0.000800
-conv2d,sigmoid,1024,l1,0.000500
-conv2d,softsign,128,l1,0.000900

@@ -1,8 +1,0 @@
-3,1000,1519,mean_squared_error,Adamax,7,7
-dense,selu,512
-dense,softmax,8
-flatten
-dropout,0.250000
-flatten
-dense,relu,512
-dense,softmax,16

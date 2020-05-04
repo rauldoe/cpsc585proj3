@@ -1,8 +1,0 @@
-3,1000,750,poisson,SGD,7,7
-flatten
-maxpooling2d,2,2
-dropout,0.250000
-conv2d,softsign,2048,l1,0.000700
-conv2d,sigmoid,64,l1,0.000300
-flatten
-conv2d,softmax,128,l2,0.000800

@@ -1,8 +1,0 @@
-3,1000,1589,logcosh,Nadam,7,7
-dropout,0.500000
-dense,softsign,256
-dense,relu,4
-flatten
-conv2d,softsign,1024,l2,0.000100
-maxpooling2d,8,8
-conv2d,sigmoid,1024,l1,0.000700

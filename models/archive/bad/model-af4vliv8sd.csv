@@ -1,6 +1,0 @@
-3,1000,1746,cosine_proximity,Adadelta,3,3
-conv2d,relu,512,l1,0.000400
-dense,sigmoid,64
-dropout,0.400000
-flatten
-conv2d,exponential,8,l1,0.000300

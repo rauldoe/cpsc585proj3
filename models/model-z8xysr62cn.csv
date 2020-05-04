@@ -1,8 +1,0 @@
-3,1000,1653,poisson,Adamax,7,7
-dropout,0.250000
-dropout,0.500000
-dense,softplus,512
-flatten
-conv2d,exponential,4,l1,0.000300
-maxpooling2d,4,4
-conv2d,softplus,128,l2,0.000300

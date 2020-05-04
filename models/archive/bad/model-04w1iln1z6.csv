@@ -1,8 +1,0 @@
-3,1000,23,kullback_leibler_divergence,Adamax,1,1
-dense,exponential,64
-conv2d,hard_sigmoid,256,l2,0.000300
-conv2d,linear,128,l2,0.000800
-flatten
-conv2d,relu,32,l1,0.000900
-dense,exponential,512
-conv2d,tanh,64,l2,0.000900

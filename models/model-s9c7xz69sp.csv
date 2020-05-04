@@ -1,8 +1,0 @@
-3,1000,557,kullback_leibler_divergence,RMSprop,5,5
-conv2d,softmax,4,l2,0.000200
-conv2d,softplus,256,l1,0.000300
-conv2d,softsign,32,l2,0.000900
-dropout,0.500000
-conv2d,softplus,1024,l1,0.000200
-dropout,0.500000
-dense,tanh,1024

@@ -1,0 +1,8 @@
+3,1000,1520,squared_hinge,Adam
+dense,sigmoid,2048
+dense,hard_sigmoid,16
+maxpooling2d,4,4
+conv2d,exponential,64,7,7,,
+dropout,0.500000
+dropout,0.500000
+dense,softplus,32

@@ -1,0 +1,8 @@
+3,1000,1195,squared_hinge,RMSprop
+dropout,0.250000
+dropout,0.250000
+maxpooling2d,4,4
+dropout,0.500000
+dropout,0.500000
+dropout,0.250000
+conv2d,softsign,8,9,9,,

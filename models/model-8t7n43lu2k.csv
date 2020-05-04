@@ -1,8 +1,0 @@
-3,1000,268,binary_crossentropy,Nadam,1,1
-dropout,0.250000
-maxpooling2d,4,4
-dropout,0.500000
-maxpooling2d,8,8
-maxpooling2d,2,2
-dense,softsign,256
-dense,sigmoid,128

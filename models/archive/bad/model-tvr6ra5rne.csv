@@ -1,7 +1,0 @@
-3,1000,634,binary_crossentropy,Nadam,1,1
-conv2d,tanh,8,l2,0.000200
-flatten
-maxpooling2d,8,8
-conv2d,elu,128,l1,0.000600
-conv2d,softsign,256,l1,0.000100
-conv2d,selu,256,l2,0.000700

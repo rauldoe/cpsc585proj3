@@ -1,8 +1,0 @@
-3,1000,1069,logcosh,RMSprop,1,1
-conv2d,linear,16,l1,0.000400
-dropout,0.350000
-flatten
-flatten
-dropout,0.500000
-dropout,0.050000
-conv2d,selu,1024,l1,0.000300

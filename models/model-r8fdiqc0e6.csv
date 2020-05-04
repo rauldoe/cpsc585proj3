@@ -1,8 +1,0 @@
-3,1000,1666,squared_hinge,Adamax,5,5
-maxpooling2d,4,4
-flatten
-conv2d,softmax,256,l2,0.000300
-dropout,0.250000
-dropout,0.250000
-dropout,0.250000
-dense,elu,128

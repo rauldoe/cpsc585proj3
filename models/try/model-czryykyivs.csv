@@ -1,0 +1,8 @@
+3,1000,1901,mean_squared_logarithmic_error,Adagrad
+maxpooling2d,4,4
+dense,linear,128
+maxpooling2d,4,4
+conv2d,exponential,32,3,3,l1,0.0007
+conv2d,selu,2048,3,3,l2,0.0005
+dropout,0.500000
+conv2d,selu,1024,1,1,l1,0.0008

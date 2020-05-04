@@ -1,0 +1,8 @@
+3,1000,1999,sparse_categorical_crossentropy,Adagrad
+dense,hard_sigmoid,128
+flatten
+flatten
+conv2d,selu,128,3,3,l1,0.0002
+dense,exponential,64
+conv2d,softmax,16,3,3,l2,0.001
+dense,exponential,2048
