@@ -1,4 +1,4 @@
 batchSize,10,2000
 kernelRegularizerValue,0.0001,0.001
-layerCount,7,7
+layerCount,2,15
 dropout,0.25,0.50
