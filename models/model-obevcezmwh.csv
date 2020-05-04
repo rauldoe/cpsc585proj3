@@ -1,0 +1,8 @@
+3,1000,1158,mean_absolute_percentage_error,SGD,1,1
+conv2d,softmax,256,l2,0.000100
+dense,sigmoid,2048
+maxpooling2d,2,2
+dropout,0.500000
+maxpooling2d,8,8
+maxpooling2d,2,2
+conv2d,relu,4,l1,0.001000

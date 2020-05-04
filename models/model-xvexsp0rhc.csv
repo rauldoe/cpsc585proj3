@@ -1,0 +1,8 @@
+3,1000,1202,categorical_crossentropy,RMSprop,7,7
+conv2d,elu,512,l1,0.000400
+maxpooling2d,2,2
+flatten
+maxpooling2d,8,8
+dropout,0.250000
+flatten
+dense,relu,128

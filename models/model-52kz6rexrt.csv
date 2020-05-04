@@ -1,0 +1,8 @@
+3,1000,1290,cosine_proximity,Nadam,7,7
+maxpooling2d,2,2
+conv2d,exponential,1024,l1,0.000300
+flatten
+conv2d,softmax,4,l2,0.000400
+maxpooling2d,8,8
+dropout,0.500000
+dense,elu,16

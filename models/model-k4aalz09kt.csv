@@ -1,0 +1,8 @@
+3,1000,1317,squared_hinge,RMSprop,1,1
+conv2d,softplus,2048,l2,0.000300
+dropout,0.500000
+maxpooling2d,4,4
+maxpooling2d,8,8
+dropout,0.250000
+conv2d,sigmoid,4,l1,0.000300
+dense,softsign,256

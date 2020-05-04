@@ -1,0 +1,8 @@
+3,1000,1590,mean_squared_logarithmic_error,Adamax,3,3
+flatten
+maxpooling2d,2,2
+dropout,0.500000
+dense,elu,16
+conv2d,softsign,4,l2,0.000600
+conv2d,exponential,128,l2,0.000200
+dense,softplus,8

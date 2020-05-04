@@ -1,0 +1,8 @@
+3,1000,129,categorical_crossentropy,Adadelta,1,1
+dense,tanh,4
+dense,softplus,512
+flatten
+maxpooling2d,2,2
+dropout,0.250000
+conv2d,selu,4,l2,0.001000
+conv2d,exponential,2048,l2,0.000800

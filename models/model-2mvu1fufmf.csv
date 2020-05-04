@@ -1,0 +1,8 @@
+3,1000,1594,mean_squared_logarithmic_error,Adagrad,3,3
+flatten
+flatten
+dropout,0.250000
+dropout,0.500000
+dropout,0.250000
+flatten
+dense,tanh,64

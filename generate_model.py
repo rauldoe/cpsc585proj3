@@ -7,6 +7,8 @@ import timeit
 import copy
 import shutil
 import random
+import os.path
+from os import path
 
 import tensorflow as tf
 
@@ -143,6 +145,11 @@ generator.load()
 
 for i in range(modelCount):
     md = generator.random()
-    modelFilepath = '%smodel-%s.csv'%(modelDir, Utility.generateRandom())
-    Utility.writeList(modelFilepath, md.outputList)
+    
+    while True:
+        modelFilepath = '%smodel-%s.csv'%(modelDir, Utility.generateRandom())
+        if (not path.exists(modelFilepath)):
+            Utility.writeList(modelFilepath, md.outputList)
+            break
+
     print(str(i)+' generated')

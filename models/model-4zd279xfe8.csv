@@ -1,0 +1,8 @@
+3,1000,628,mean_absolute_percentage_error,RMSprop,3,3
+dense,softsign,64
+flatten
+conv2d,selu,8,l2,0.000400
+flatten
+maxpooling2d,8,8
+dense,softsign,4
+dense,exponential,16

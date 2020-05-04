@@ -1,0 +1,8 @@
+3,1000,1431,poisson,Adamax,5,5
+maxpooling2d,4,4
+dropout,0.250000
+flatten
+flatten
+conv2d,selu,2048,l1,0.000700
+dense,sigmoid,32
+dense,relu,8

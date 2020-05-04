@@ -1,0 +1,8 @@
+3,1000,1812,mean_squared_error,Adamax,3,3
+maxpooling2d,2,2
+dense,sigmoid,128
+dense,exponential,128
+dense,exponential,32
+maxpooling2d,2,2
+flatten
+conv2d,exponential,16,l1,0.000100

@@ -1,0 +1,8 @@
+3,1000,435,mean_absolute_percentage_error,SGD,7,7
+dropout,0.500000
+flatten
+dense,sigmoid,8
+dropout,0.250000
+dropout,0.500000
+flatten
+conv2d,selu,256,l1,0.000500

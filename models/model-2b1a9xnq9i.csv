@@ -1,0 +1,8 @@
+3,1000,1111,mean_absolute_percentage_error,Adagrad,3,3
+dropout,0.500000
+dropout,0.500000
+maxpooling2d,2,2
+dropout,0.250000
+flatten
+conv2d,softplus,8,l1,0.000700
+dense,softmax,4

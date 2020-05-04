@@ -1,0 +1,8 @@
+3,1000,265,mean_absolute_percentage_error,Nadam,3,3
+dropout,0.500000
+flatten
+conv2d,sigmoid,1024,l2,0.000100
+conv2d,softsign,512,l1,0.001000
+flatten
+dropout,0.500000
+dense,elu,64

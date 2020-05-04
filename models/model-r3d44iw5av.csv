@@ -1,0 +1,8 @@
+3,1000,950,squared_hinge,Adamax,7,7
+dense,relu,1024
+dropout,0.500000
+dense,selu,2048
+dense,exponential,1024
+dropout,0.500000
+dense,softplus,16
+conv2d,linear,64,l1,0.000100

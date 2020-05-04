@@ -1,0 +1,8 @@
+3,1000,1465,mean_squared_error,Adagrad,7,7
+conv2d,tanh,64,l1,0.000700
+maxpooling2d,2,2
+dropout,0.250000
+dense,tanh,64
+flatten
+flatten
+dense,exponential,64

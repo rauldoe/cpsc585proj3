@@ -1,0 +1,8 @@
+3,1000,1868,cosine_proximity,Adagrad,1,1
+flatten
+maxpooling2d,2,2
+flatten
+maxpooling2d,2,2
+maxpooling2d,2,2
+maxpooling2d,4,4
+conv2d,selu,64,l2,0.000900

@@ -1,0 +1,8 @@
+3,1000,172,squared_hinge,Adadelta,7,7
+flatten
+maxpooling2d,4,4
+flatten
+dropout,0.250000
+dense,selu,2048
+dropout,0.500000
+conv2d,sigmoid,256,l1,0.000500

@@ -1,0 +1,8 @@
+3,1000,882,mean_squared_error,Adagrad,3,3
+flatten
+flatten
+flatten
+maxpooling2d,8,8
+maxpooling2d,4,4
+conv2d,softsign,8,l2,0.000600
+dense,tanh,4

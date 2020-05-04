@@ -1,0 +1,8 @@
+3,1000,153,mean_squared_error,Adagrad,5,5
+dropout,0.500000
+dense,selu,32
+dropout,0.500000
+conv2d,exponential,128,l1,0.000800
+conv2d,linear,64,l1,0.000200
+conv2d,tanh,2048,l1,0.000800
+conv2d,relu,512,l1,0.000400

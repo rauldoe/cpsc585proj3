@@ -1,0 +1,8 @@
+3,1000,1978,categorical_hinge,SGD,7,7
+maxpooling2d,2,2
+conv2d,elu,512,l2,0.000700
+dropout,0.500000
+flatten
+dropout,0.500000
+maxpooling2d,8,8
+conv2d,exponential,128,l2,0.000400

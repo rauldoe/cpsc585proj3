@@ -1,0 +1,8 @@
+3,1000,847,mean_absolute_percentage_error,Adamax,1,1
+flatten
+maxpooling2d,4,4
+dense,softplus,512
+dropout,0.250000
+maxpooling2d,2,2
+dropout,0.500000
+dense,relu,16

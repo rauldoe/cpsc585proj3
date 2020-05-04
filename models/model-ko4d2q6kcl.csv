@@ -1,0 +1,8 @@
+3,1000,620,kullback_leibler_divergence,Adadelta,7,7
+maxpooling2d,4,4
+maxpooling2d,4,4
+flatten
+maxpooling2d,4,4
+dense,exponential,4
+conv2d,linear,4,l1,0.000700
+dense,softplus,1024

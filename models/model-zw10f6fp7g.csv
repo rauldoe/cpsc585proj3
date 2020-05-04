@@ -1,0 +1,8 @@
+3,1000,1652,sparse_categorical_crossentropy,Nadam,7,7
+flatten
+maxpooling2d,4,4
+flatten
+conv2d,linear,2048,l1,0.000600
+flatten
+dense,selu,128
+conv2d,sigmoid,16,l1,0.000900

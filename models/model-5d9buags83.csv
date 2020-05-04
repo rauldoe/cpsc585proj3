@@ -1,0 +1,8 @@
+3,1000,1387,binary_crossentropy,Adamax,7,7
+flatten
+conv2d,softsign,1024,l1,0.000500
+dropout,0.500000
+dense,sigmoid,64
+conv2d,sigmoid,128,l1,0.001000
+conv2d,sigmoid,2048,l2,0.000700
+dense,hard_sigmoid,8

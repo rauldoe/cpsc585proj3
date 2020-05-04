@@ -1,0 +1,8 @@
+3,1000,927,mean_squared_logarithmic_error,SGD,3,3
+dense,tanh,1024
+dropout,0.250000
+maxpooling2d,8,8
+dense,elu,4
+maxpooling2d,4,4
+flatten
+dense,linear,1024

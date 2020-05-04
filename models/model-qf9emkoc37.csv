@@ -1,0 +1,8 @@
+3,1000,305,mean_squared_logarithmic_error,RMSprop,3,3
+dense,selu,256
+dense,softmax,512
+dropout,0.500000
+dropout,0.250000
+dense,sigmoid,2048
+dense,elu,64
+conv2d,sigmoid,2048,l2,0.000700

@@ -1,0 +1,8 @@
+3,1000,1733,mean_absolute_error,Adagrad,7,7
+conv2d,linear,8,l2,0.000800
+maxpooling2d,4,4
+dropout,0.250000
+dropout,0.250000
+maxpooling2d,2,2
+dense,hard_sigmoid,8
+dense,exponential,64

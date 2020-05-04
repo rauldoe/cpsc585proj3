@@ -1,0 +1,8 @@
+3,1000,893,is_categorical_crossentropy,Adam,3,3
+dense,sigmoid,8
+maxpooling2d,8,8
+dropout,0.500000
+dropout,0.500000
+conv2d,hard_sigmoid,256,l1,0.000600
+dense,softmax,128
+conv2d,linear,64,l1,0.000400

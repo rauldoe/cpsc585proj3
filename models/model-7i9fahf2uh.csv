@@ -1,0 +1,8 @@
+3,1000,820,huber_loss,Adagrad,3,3
+conv2d,softmax,16,l2,0.000800
+conv2d,selu,256,l2,0.000700
+conv2d,softplus,4,l2,0.000600
+dropout,0.500000
+conv2d,softplus,2048,l2,0.000500
+maxpooling2d,2,2
+dense,sigmoid,16
