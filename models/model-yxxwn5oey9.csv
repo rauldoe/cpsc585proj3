@@ -1,0 +1,10 @@
+3,1000,1543,logcosh,Adagrad,5,5
+flatten
+maxpooling2d,2,2
+dropout,0.450000
+dropout,0.300000
+dense,sigmoid,512
+dropout,0.500000
+flatten
+dense,selu,8
+conv2d,elu,1024,l2,0.001000

@@ -1,0 +1,3 @@
+3,1000,1880,mean_absolute_error,SGD,7,7
+dense,softsign,8
+dense,tanh,16

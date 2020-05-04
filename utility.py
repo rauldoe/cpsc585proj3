@@ -6,7 +6,7 @@ from os import listdir
 from os.path import isfile, join
 
 class Utility:
-    newLine = '\r\n'
+    newLine = '\n'
     delimiter = ','
     quotechar = '|'
     commentHeader = '#'
@@ -37,6 +37,15 @@ class Utility:
                 writer.writerow(data)
 
     @staticmethod
+    def writeList(filePath, dataList):
+        filePtr = open(filePath, "w")
+        for line in dataList:
+            # write line to output file
+            filePtr.write(line+'\n')
+
+        filePtr.close()
+
+    @staticmethod
     def generateHash(data):
         # Assumes the default UTF-8
         hash_object = hashlib.md5(data.encode())
@@ -52,24 +61,35 @@ class Utility:
         return Utility.generateHash(strippedData)
 
     @staticmethod
-    def generateRandom(stringLength=8):
+    def generateRandom(stringLength=10):
         letters = string.ascii_lowercase+string.digits
         return ''.join(random.choice(letters) for i in range(stringLength))
-
-    @staticmethod
-    def sortBy(dataList, sortFunc):
-        # L = [["Alice", 20.233], ["Bob", 20.454], ["Alex", 5.978]]
-        dataList.sort(key=sortFunc, reverse=True)
-
-        return dataList
 
     @staticmethod
     def generateRandomFloat(min, max):
         multiplier = float(1.0/min)
         minInt = multiplier*min
         maxInt = multiplier*max
-        return random.randrange(minInt, maxInt+1)
+        return random.randrange(minInt, maxInt+1)/multiplier
     
+    @staticmethod
+    def getRandom(list):
+        return random.choice(list)
+
+    @staticmethod
+    def randomInt(ranges, rangeName):
+        found = list(filter(lambda x: x[0] == rangeName, ranges))[0]
+        min = int(found[1])
+        max = int(found[2])
+        return random.randint(min, max)
+
+    @staticmethod
+    def randomFloat(ranges, rangeName):
+        found = list(filter(lambda x: x[0] == rangeName, ranges))[0]
+        min = float(found[1])
+        max = float(found[2])
+        return Utility.generateRandomFloat(min, max)
+
     @staticmethod
     def getValue(value, typeStr):
         if (value == ''):

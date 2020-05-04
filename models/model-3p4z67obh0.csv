@@ -1,0 +1,6 @@
+3,1000,1041,mean_absolute_error,RMSprop,5,5
+flatten
+conv2d,softplus,512,l1,0.000600
+dense,linear,512
+dense,softsign,4
+conv2d,softplus,4,l2,0.000700

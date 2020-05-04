@@ -1,0 +1,8 @@
+3,1000,824,mean_absolute_error,Nadam,7,7
+dense,elu,64
+maxpooling2d,4,4
+dense,selu,8
+flatten
+flatten
+dense,hard_sigmoid,2048
+dense,exponential,2048

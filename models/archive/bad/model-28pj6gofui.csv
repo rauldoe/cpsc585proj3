@@ -1,0 +1,11 @@
+3,1000,115,mean_absolute_error,SGD,1,1
+conv2d,softsign,256,l2,0.000500
+dropout,0.500000
+conv2d,tanh,16,l2,0.001000
+dense,tanh,32
+dense,relu,32
+dropout,0.400000
+maxpooling2d,8,8
+flatten
+dense,softplus,1024
+dense,hard_sigmoid,4

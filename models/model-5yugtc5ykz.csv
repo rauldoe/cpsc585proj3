@@ -1,0 +1,11 @@
+3,1000,1168,poisson,SGD,7,7
+dense,elu,64
+dense,relu,32
+dense,elu,64
+flatten
+dense,elu,8
+maxpooling2d,8,8
+conv2d,relu,4,l2,0.000300
+conv2d,linear,64,l1,0.000900
+conv2d,elu,256,l2,0.000300
+conv2d,sigmoid,512,l2,0.000100

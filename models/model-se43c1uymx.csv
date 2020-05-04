@@ -1,0 +1,6 @@
+3,1000,622,huber_loss,SGD,1,1
+dense,relu,2048
+conv2d,selu,64,l1,0.000900
+flatten
+flatten
+dense,exponential,16

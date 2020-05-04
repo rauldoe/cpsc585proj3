@@ -1,0 +1,5 @@
+3,1000,1898,mean_squared_logarithmic_error,Nadam,1,1
+dense,tanh,256
+dense,softmax,4
+dense,softsign,128
+dense,softplus,512

@@ -1,0 +1,8 @@
+3,1000,1928,cosine_proximity,Adagrad,7,7
+dense,sigmoid,256
+maxpooling2d,4,4
+flatten
+dropout,0.250000
+maxpooling2d,2,2
+dropout,0.200000
+dense,hard_sigmoid,16

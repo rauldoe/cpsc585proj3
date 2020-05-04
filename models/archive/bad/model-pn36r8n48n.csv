@@ -1,0 +1,7 @@
+3,1000,760,mean_squared_error,Adadelta,1,1
+conv2d,relu,4,l2,0.001000
+dropout,0.200000
+maxpooling2d,8,8
+flatten
+maxpooling2d,2,2
+dense,tanh,256

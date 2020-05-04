@@ -1,0 +1,10 @@
+3,1000,713,kullback_leibler_divergence,Adadelta,3,3
+dense,sigmoid,128
+conv2d,linear,128,l1,0.000100
+flatten
+dropout,0.350000
+dropout,0.400000
+dropout,0.250000
+flatten
+dense,softmax,128
+dense,softmax,64

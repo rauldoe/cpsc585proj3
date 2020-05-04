@@ -1,0 +1,8 @@
+3,1000,1656,kullback_leibler_divergence,Nadam,5,5
+maxpooling2d,4,4
+dropout,0.100000
+conv2d,linear,2048,l2,0.000100
+flatten
+maxpooling2d,4,4
+flatten
+conv2d,selu,4,l2,0.000300

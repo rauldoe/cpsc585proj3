@@ -1,0 +1,6 @@
+3,1000,1352,sparse_categorical_crossentropy,Adagrad,7,7
+dense,linear,1024
+flatten
+flatten
+dropout,0.100000
+conv2d,linear,256,l1,0.000700

@@ -1,0 +1,10 @@
+3,1000,289,huber_loss,Nadam,3,3
+maxpooling2d,2,2
+conv2d,hard_sigmoid,8,l1,0.000800
+flatten
+flatten
+flatten
+dense,softplus,16
+dropout,0.200000
+dense,linear,8
+conv2d,sigmoid,512,l1,0.000700

@@ -1,0 +1,6 @@
+3,1000,1495,huber_loss,RMSprop,7,7
+maxpooling2d,4,4
+conv2d,selu,128,l1,0.000600
+maxpooling2d,4,4
+flatten
+dense,hard_sigmoid,16

@@ -1,0 +1,10 @@
+3,1000,432,hinge,Nadam,1,1
+dropout,0.200000
+conv2d,sigmoid,8,l1,0.000600
+maxpooling2d,4,4
+flatten
+conv2d,exponential,128,l1,0.000100
+dense,sigmoid,2048
+dense,softplus,512
+conv2d,softsign,512,l1,0.000100
+conv2d,softplus,8,l2,0.000800

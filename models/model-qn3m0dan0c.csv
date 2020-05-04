@@ -1,0 +1,10 @@
+3,1000,1813,is_categorical_crossentropy,SGD,5,5
+flatten
+conv2d,softsign,256,l2,0.000700
+dense,hard_sigmoid,512
+conv2d,linear,4,l2,0.000700
+maxpooling2d,8,8
+maxpooling2d,2,2
+flatten
+flatten
+dense,selu,4

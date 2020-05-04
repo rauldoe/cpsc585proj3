@@ -58,10 +58,11 @@ class LayerDescriptor:
             self.FilterCount = int(inputList[2])
 
             kernelRegularizer = LayerDescriptor.kernelRegularizer(inputList[3], inputList[4])
-            if (self.index == 0):
-                layer = Conv2D(self.FilterCount, kernel_size=self.modelDescriptor.kernelSize, activation=self.Activation, kernel_regularizer=kernelRegularizer, input_shape=self.modelDescriptor.inputShape.normalized())
-            else:
-                layer = Conv2D(self.FilterCount, kernel_size=self.modelDescriptor.kernelSize, activation=self.Activation, kernel_regularizer=kernelRegularizer)
+            layer = Conv2D(self.FilterCount, kernel_size=self.modelDescriptor.kernelSize, activation=self.Activation, kernel_regularizer=kernelRegularizer, input_shape=self.modelDescriptor.inputShape.normalized())
+            # if (self.index == 0):
+            #     layer = Conv2D(self.FilterCount, kernel_size=self.modelDescriptor.kernelSize, activation=self.Activation, kernel_regularizer=kernelRegularizer, input_shape=self.modelDescriptor.inputShape.normalized())
+            # else:
+            #     layer = Conv2D(self.FilterCount, kernel_size=self.modelDescriptor.kernelSize, activation=self.Activation, kernel_regularizer=kernelRegularizer)
 
         elif (self.LayerType == 'maxpooling2d'):
             layer = MaxPooling2D(pool_size=(int(inputList[1]), int(inputList[2])))
@@ -233,8 +234,6 @@ class ModelInstance:
             model.add(layer)
             print("i: %d added"%(i)) 
 
-        model.summary()
-
         model.compile(loss=modelInstance.descriptor.loss,
                     optimizer=modelInstance.descriptor.optimizer,
                     metrics=['accuracy'])
@@ -284,9 +283,11 @@ class ScoreBoard:
             scoreObj = [modelDescriptor.hash, score[1], score[0], modelDescriptor.descriptorFilepath, count]
             self.scoreList.append(scoreObj)
         
-        self.scoreList = Utility.sortBy(self.scoreList, lambda i:float(i[1]))
-        self.scoreList.insert(0, ['#hash', 'score1', 'score0', 'filePath', 'count'])
-        Utility.writeCsv(self.scoreFilepath, self.scoreList)
+        self.scoreList.sort(key=lambda i:float(i[1]), reverse=True)
+
+        newList = copy.copy(self.scoreList)
+        newList.insert(0, ['#hash', 'score1', 'score0', 'filePath', 'count'])
+        Utility.writeCsv(self.scoreFilepath, newList)
 
         if (self.isDone(modelDescriptor)):
             modelDescriptor.archive()
@@ -303,20 +304,27 @@ def processNN(matFilepath, modelInstance):
     modelInstance.descriptor.inputShape = modelData.inputShape
 
     modelInstance = ModelInstance.buildLayers(modelInstance, modelInstance.descriptor.descriptions)
-    modelInstance = ModelInstance.buildModel(modelInstance, modelInstance.layers)
 
-    # model.fit(modelData.train.x, modelData.train.y,
-    #                     batch_size=modelInstance.descriptor.batchSize,
-    #                     epochs=modelInstance.descriptor.epochCount, callbacks=[earlyStop],
-    #                     validation_data=(modelData.val.x, modelData.val.y)
-    #                     )
-    # score = model.evaluate(modelData.test.x, modelData.test.y, verbose=0)
+    try:
+        modelInstance = ModelInstance.buildModel(modelInstance, modelInstance.layers)
 
-    score = [54.34, 98.55]
-    modelInstance.score = score
+        modelInstance.model.fit(modelData.train.x, modelData.train.y,
+                            batch_size=modelInstance.descriptor.batchSize,
+                            epochs=modelInstance.descriptor.epochCount, callbacks=[earlyStop],
+                            validation_data=(modelData.val.x, modelData.val.y)
+                            )
+        modelInstance.model.summary()
+        score = modelInstance.model.evaluate(modelData.test.x, modelData.test.y, verbose=0)
 
-    print('Test loss:', score[0])
-    print('Test accuracy:', score[1])
+        # score = [54.34, 98.55]
+        modelInstance.score = score
+
+        print('Test loss:', score[0])
+        print('Test accuracy:', score[1])
+    except Exception as ex:
+        print(ex)
+
+
 
     return modelInstance
 
@@ -349,6 +357,9 @@ for modelFile in modelFiles:
 
         modelInstance = processNN(matFilepath, modelInstance)
 
-        scoreBoard.record(modelDescriptor, modelInstance.score)
+        if (modelInstance.score == None):
+            modelDescriptor.archive()
+        else:
+            scoreBoard.record(modelDescriptor, modelInstance.score)
 
 

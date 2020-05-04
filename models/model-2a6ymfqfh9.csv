@@ -1,0 +1,11 @@
+3,1000,570,squared_hinge,Adagrad,1,1
+flatten
+dense,exponential,64
+dense,sigmoid,64
+flatten
+maxpooling2d,4,4
+dense,softmax,4
+flatten
+dense,softsign,16
+conv2d,relu,16,l2,0.000300
+conv2d,softplus,128,l2,0.000500

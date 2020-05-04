@@ -1,0 +1,10 @@
+3,1000,716,poisson,Adamax,7,7
+dense,elu,32
+flatten
+conv2d,relu,64,l2,0.000400
+flatten
+dropout,0.100000
+conv2d,linear,128,l2,0.000200
+dropout,0.300000
+dense,softsign,256
+conv2d,softplus,512,l1,0.000800

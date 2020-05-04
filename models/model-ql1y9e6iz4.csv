@@ -1,0 +1,5 @@
+3,1000,1778,mean_absolute_error,Adam,7,7
+maxpooling2d,4,4
+dense,exponential,64
+flatten
+dense,hard_sigmoid,128

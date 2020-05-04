@@ -1,0 +1,6 @@
+3,1000,1892,categorical_hinge,SGD,3,3
+conv2d,elu,256,l1,0.000700
+conv2d,linear,64,l2,0.000500
+flatten
+dense,softmax,32
+dense,hard_sigmoid,512

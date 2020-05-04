@@ -1,0 +1,7 @@
+3,1000,1318,mean_squared_logarithmic_error,Adam,3,3
+maxpooling2d,8,8
+dense,linear,64
+conv2d,elu,64,l2,0.000400
+dense,exponential,32
+conv2d,softsign,32,l1,0.000400
+dense,tanh,32

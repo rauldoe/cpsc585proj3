@@ -1,0 +1,3 @@
+3,1000,1729,kullback_leibler_divergence,Adamax,5,5
+dropout,0.200000
+conv2d,elu,64,l2,0.000800

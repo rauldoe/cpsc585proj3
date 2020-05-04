@@ -1,0 +1,4 @@
+3,1000,978,mean_absolute_error,Adamax,1,1
+conv2d,softsign,2048,l1,0.000500
+maxpooling2d,2,2
+dense,softsign,2048

@@ -1,0 +1,6 @@
+3,1000,513,binary_crossentropy,RMSprop,3,3
+flatten
+dropout,0.200000
+maxpooling2d,4,4
+maxpooling2d,8,8
+conv2d,relu,64,l1,0.000400

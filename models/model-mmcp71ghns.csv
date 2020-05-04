@@ -1,0 +1,4 @@
+3,1000,1467,cosine_proximity,Adadelta,3,3
+dense,elu,2048
+conv2d,exponential,128,l1,0.000700
+conv2d,linear,128,l1,0.000300

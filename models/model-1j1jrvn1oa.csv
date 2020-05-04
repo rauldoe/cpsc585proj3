@@ -1,0 +1,4 @@
+3,1000,1823,cosine_proximity,SGD,5,5
+flatten
+dense,linear,256
+dense,elu,8

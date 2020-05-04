@@ -1,0 +1,11 @@
+3,1000,680,mean_absolute_error,Adam,1,1
+dense,elu,256
+conv2d,sigmoid,256,l2,0.000800
+conv2d,sigmoid,32,l2,0.000400
+dense,linear,64
+conv2d,hard_sigmoid,512,l1,0.001000
+conv2d,selu,16,l2,0.000700
+flatten
+dropout,0.100000
+dense,relu,16
+dense,linear,32

@@ -1,0 +1,11 @@
+3,1000,1163,mean_absolute_percentage_error,RMSprop,5,5
+maxpooling2d,8,8
+dropout,0.450000
+conv2d,elu,128,l1,0.000900
+maxpooling2d,2,2
+flatten
+conv2d,exponential,512,l2,0.001000
+dropout,0.050000
+flatten
+dropout,0.450000
+conv2d,sigmoid,8,l2,0.000600

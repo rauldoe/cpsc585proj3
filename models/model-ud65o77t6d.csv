@@ -1,0 +1,6 @@
+3,1000,1259,binary_crossentropy,Nadam,1,1
+dense,linear,4
+dropout,0.300000
+dense,sigmoid,4
+maxpooling2d,8,8
+conv2d,exponential,64,l2,0.001000

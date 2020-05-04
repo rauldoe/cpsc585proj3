@@ -1,0 +1,10 @@
+3,1000,1404,logcosh,Adagrad,5,5
+conv2d,elu,16,l2,0.000700
+conv2d,softmax,1024,l1,0.001000
+dropout,0.050000
+flatten
+flatten
+flatten
+flatten
+conv2d,hard_sigmoid,32,l2,0.000500
+dense,exponential,8

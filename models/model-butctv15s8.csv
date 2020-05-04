@@ -1,0 +1,6 @@
+3,1000,267,cosine_proximity,SGD,1,1
+dense,sigmoid,1024
+maxpooling2d,8,8
+maxpooling2d,2,2
+dropout,0.150000
+dense,softplus,4

@@ -1,0 +1,3 @@
+3,1000,382,mean_absolute_error,Adagrad,3,3
+conv2d,relu,128,l2,0.000100
+dense,linear,8
