@@ -110,11 +110,13 @@ class ModelData:
         self.inputShape = inputShape
 
 class ModelDescriptor:
-    def __init__(self, descriptorFilepath, archivePath, hyperparameters, descriptions, inputShape, numberOfClasses):
+    def __init__(self, descriptorFilepath, archivePath, badPath, hyperparameters, descriptions, inputShape, numberOfClasses, threshholdAccuracy):
         self.descriptorFilepath = descriptorFilepath
         self.archivePath = archivePath
+        self.badPath = badPath
         self.hyperparameters = hyperparameters
         self.descriptions = descriptions
+        self.threshholdAccuracy = threshholdAccuracy
 
         # processCount, epochCount, batchSize, kernelRegularizer, kernelRegularizerValue, loss, optimizer, kernelSizex, kernelSizey
         i = -1
@@ -142,11 +144,14 @@ class ModelDescriptor:
     def archive(self):
         shutil.move(self.descriptorFilepath,  self.archivePath)
 
+    def bad(self):
+        shutil.move(self.descriptorFilepath,  self.badPath)
+
     @staticmethod
-    def create(descriptorFilepath, archivePath, inputShape, numberOfClasses):
+    def create(descriptorFilepath, archivePath, badPath, inputShape, numberOfClasses, threshholdAccuracy):
         descriptions = Utility.readCsv(descriptorFilepath)
         hyperparameters = descriptions.pop(0)
-        return ModelDescriptor(descriptorFilepath, archivePath, hyperparameters, descriptions, inputShape, numberOfClasses)
+        return ModelDescriptor(descriptorFilepath, archivePath, badPath, hyperparameters, descriptions, inputShape, numberOfClasses, threshholdAccuracy)
 
 class ModelInstance:
     def __init__(self, descriptor, model=None, layers=None, score=None):
@@ -256,7 +261,8 @@ class ScoreBoard:
         if (len(itemList) > 0):
             scoreObj = itemList[0]
             
-            return (int(scoreObj[4]) >= modelDescriptor.processCount)
+            accuracy = float(scoreObj[1])
+            return ((accuracy < modelDescriptor.threshholdAccuracy) or (int(scoreObj[4]) >= modelDescriptor.processCount))
 
         return False
 
@@ -341,14 +347,17 @@ numberOfClasses = 26
 matFilepath = './emnist-letters.mat'
 
 scoreFilepath = './models/results/scoreboard.csv'
-scoreBoard = ScoreBoard(scoreFilepath)
 
 modelDir = './models/'
 archivePath = './models/archive/'
+badPath = './models/archive/bad/'
+threshholdAccuracy = 0.90
+
+scoreBoard = ScoreBoard(scoreFilepath)
 modelFiles = Utility.getFiles(modelDir)
 for modelFile in modelFiles:
     descriptorPath = '%s%s'%(modelDir, modelFile)
-    modelDescriptor = ModelDescriptor.create(descriptorPath, archivePath, inputShape, numberOfClasses)
+    modelDescriptor = ModelDescriptor.create(descriptorPath, archivePath, badPath, inputShape, numberOfClasses, threshholdAccuracy)
 
     if (scoreBoard.isDone(modelDescriptor)):
         modelDescriptor.archive()
@@ -358,7 +367,7 @@ for modelFile in modelFiles:
         modelInstance = processNN(matFilepath, modelInstance)
 
         if (modelInstance.score == None):
-            modelDescriptor.archive()
+            modelDescriptor.bad()
         else:
             scoreBoard.record(modelDescriptor, modelInstance.score)
 
