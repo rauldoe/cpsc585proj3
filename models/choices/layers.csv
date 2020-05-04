@@ -1,0 +1,5 @@
+conv2d
+dense
+maxpooling2d
+dropout
+flatten
