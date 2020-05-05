@@ -312,7 +312,7 @@ def processNN(matFilepath, modelInstance):
     try:
         modelInstance = ModelInstance.buildModel(modelInstance, modelInstance.layers)
 
-        modelInstance.model.fit(modelData.train.x, modelData.train.y,
+        history = modelInstance.model.fit(modelData.train.x, modelData.train.y,
                             batch_size=modelInstance.descriptor.batchSize,
                             epochs=modelInstance.descriptor.epochCount, callbacks=[earlyStop],
                             validation_data=(modelData.val.x, modelData.val.y)
