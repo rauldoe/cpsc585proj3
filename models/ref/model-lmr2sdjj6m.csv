@@ -1,8 +1,0 @@
-3,1000,315,huber_loss,Adam
-maxpooling2d,4,4
-maxpooling2d,8,8
-flatten
-flatten
-dense,elu,64
-dropout,0.250000
-conv2d,tanh,256,3,3,,

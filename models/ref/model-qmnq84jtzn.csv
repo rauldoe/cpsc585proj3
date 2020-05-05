@@ -1,8 +1,0 @@
-3,1000,1153,categorical_hinge,Adam
-dense,softplus,16
-flatten
-dropout,0.500000
-flatten
-flatten
-maxpooling2d,8,8
-conv2d,tanh,512,3,3,l1,0.0001

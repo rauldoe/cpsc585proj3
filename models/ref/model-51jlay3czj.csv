@@ -1,8 +1,0 @@
-3,1000,219,binary_crossentropy,RMSprop
-flatten
-flatten
-flatten
-flatten
-conv2d,sigmoid,512,1,1,l2,0.0005
-dropout,0.500000
-dense,elu,64

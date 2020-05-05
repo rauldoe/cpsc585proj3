@@ -1,8 +1,0 @@
-3,1000,1674,categorical_hinge,Adadelta
-conv2d,sigmoid,32,9,9,l2,0.0005
-dense,relu,256
-conv2d,selu,4,3,3,l1,0.0008
-flatten
-conv2d,relu,4,3,3,l1,0.0005
-dense,sigmoid,8
-conv2d,linear,16,7,7,,

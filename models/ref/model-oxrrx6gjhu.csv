@@ -1,8 +1,0 @@
-3,1000,1584,squared_hinge,Adadelta
-dropout,0.500000
-dropout,0.250000
-flatten
-dropout,0.250000
-dropout,0.250000
-flatten
-conv2d,exponential,4,7,7,l2,0.0009

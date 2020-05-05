@@ -1,4 +1,0 @@
-3,1000,779,mean_absolute_percentage_error,Adadelta
-dropout,0.250000
-conv2d,softmax,256,9,9,l2,0.0005
-dense,selu,256

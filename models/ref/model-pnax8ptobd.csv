@@ -1,8 +1,0 @@
-3,1000,113,sparse_categorical_crossentropy,Adamax
-maxpooling2d,2,2
-maxpooling2d,8,8
-dropout,0.500000
-dense,sigmoid,512
-conv2d,softplus,32,9,9,l2,0.0003
-maxpooling2d,4,4
-conv2d,linear,128,9,9,l2,0.001

@@ -1,8 +1,0 @@
-3,1000,183,cosine_proximity,Adagrad
-flatten
-conv2d,softmax,8,9,9,l2,0.001
-maxpooling2d,2,2
-dropout,0.250000
-maxpooling2d,4,4
-dropout,0.500000
-conv2d,softplus,16,9,9,l1,0.0004

@@ -1,8 +1,0 @@
-3,1000,1878,binary_crossentropy,SGD
-flatten
-dense,elu,32
-conv2d,hard_sigmoid,128,5,5,,
-dense,sigmoid,64
-dense,softsign,4
-flatten
-conv2d,softplus,4,3,3,l2,0.0002

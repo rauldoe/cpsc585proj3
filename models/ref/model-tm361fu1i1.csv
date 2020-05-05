@@ -1,5 +1,0 @@
-3,1000,1296,binary_crossentropy,Adadelta
-dense,elu,128
-maxpooling2d,8,8
-flatten
-dense,softmax,32

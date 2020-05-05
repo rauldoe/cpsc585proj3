@@ -1,8 +1,0 @@
-3,1000,1473,categorical_crossentropy,Adam
-dense,hard_sigmoid,64
-dense,softplus,2048
-dense,tanh,256
-dense,exponential,8
-maxpooling2d,4,4
-dropout,0.500000
-dense,linear,16

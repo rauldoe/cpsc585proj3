@@ -1,8 +1,0 @@
-3,1000,668,categorical_crossentropy,RMSprop
-maxpooling2d,4,4
-maxpooling2d,4,4
-flatten
-flatten
-maxpooling2d,8,8
-maxpooling2d,4,4
-conv2d,sigmoid,512,9,9,,

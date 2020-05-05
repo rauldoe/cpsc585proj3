@@ -1,8 +1,0 @@
-3,1000,1590,squared_hinge,Adadelta
-dense,elu,512
-dense,softplus,1024
-flatten
-maxpooling2d,2,2
-flatten
-conv2d,tanh,8,1,1,,
-conv2d,softsign,16,9,9,,

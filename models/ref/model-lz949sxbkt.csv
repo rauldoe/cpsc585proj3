@@ -1,8 +1,0 @@
-3,1000,459,mean_absolute_error,Adagrad
-maxpooling2d,8,8
-dropout,0.500000
-conv2d,softsign,8,7,7,l2,0.0007
-conv2d,sigmoid,64,1,1,,
-dropout,0.500000
-conv2d,sigmoid,4,7,7,l1,0.0001
-conv2d,linear,64,5,5,l2,0.001

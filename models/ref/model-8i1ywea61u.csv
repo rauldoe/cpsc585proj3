@@ -1,8 +1,0 @@
-3,1000,1765,hinge,Adagrad
-maxpooling2d,8,8
-maxpooling2d,2,2
-conv2d,hard_sigmoid,256,3,3,l2,0.0007
-flatten
-conv2d,softplus,128,5,5,l2,0.0004
-dense,elu,64
-dense,softmax,4

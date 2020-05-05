@@ -1,8 +1,0 @@
-3,1000,1155,mean_squared_logarithmic_error,Nadam
-dropout,0.250000
-maxpooling2d,4,4
-maxpooling2d,2,2
-maxpooling2d,8,8
-maxpooling2d,4,4
-conv2d,relu,8,7,7,,
-conv2d,hard_sigmoid,4,7,7,l2,0.0005

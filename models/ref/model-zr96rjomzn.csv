@@ -1,9 +1,0 @@
-3,1000,1355,cosine_proximity,Adamax
-maxpooling2d,2,2
-dropout,0.250000
-dense,softplus,512
-conv2d,hard_sigmoid,128,9,9,,
-flatten
-maxpooling2d,2,2
-conv2d,linear,256,7,7,l1,0.001
-dense,exponential,32

@@ -1,9 +1,0 @@
-3,1000,657,sparse_categorical_crossentropy,RMSprop
-conv2d,softplus,512,7,7,,
-maxpooling2d,8,8
-dense,exponential,2048
-dense,softplus,128
-dense,selu,256
-flatten
-dense,elu,8
-conv2d,hard_sigmoid,32,9,9,l2,0.0009

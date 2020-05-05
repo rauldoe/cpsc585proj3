@@ -1,5 +1,0 @@
-3,1000,1836,squared_hinge,RMSprop
-conv2d,relu,1024,7,7,l1,0.0008
-flatten
-flatten
-dense,sigmoid,1024

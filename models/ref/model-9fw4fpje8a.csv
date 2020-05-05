@@ -1,8 +1,0 @@
-3,1000,1517,mean_absolute_percentage_error,SGD
-dropout,0.250000
-conv2d,sigmoid,2048,1,1,l2,0.0002
-maxpooling2d,2,2
-conv2d,sigmoid,16,3,3,l1,0.0009
-dropout,0.250000
-dense,tanh,128
-conv2d,linear,64,5,5,l1,0.0008

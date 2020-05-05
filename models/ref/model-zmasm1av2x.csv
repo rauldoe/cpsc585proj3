@@ -1,9 +1,0 @@
-3,1000,523,mean_squared_error,Adamax
-conv2d,softplus,16,9,9,l2,0.0009
-dropout,0.500000
-dense,softmax,1024
-conv2d,elu,16,9,9,,
-conv2d,softsign,512,9,9,l2,0.0009
-maxpooling2d,4,4
-dropout,0.250000
-conv2d,relu,512,7,7,l2,0.0007

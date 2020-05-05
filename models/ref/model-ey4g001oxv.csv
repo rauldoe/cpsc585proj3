@@ -1,8 +1,0 @@
-3,1000,543,cosine_proximity,Adam
-maxpooling2d,4,4
-maxpooling2d,8,8
-dense,selu,16
-dropout,0.500000
-conv2d,softplus,256,1,1,l1,0.0005
-dense,selu,64
-conv2d,softsign,4,1,1,,

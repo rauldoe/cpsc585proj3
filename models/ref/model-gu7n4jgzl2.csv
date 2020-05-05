@@ -1,6 +1,0 @@
-3,1000,1810,huber_loss,Adagrad
-dense,hard_sigmoid,1024
-maxpooling2d,8,8
-maxpooling2d,4,4
-maxpooling2d,4,4
-conv2d,hard_sigmoid,8,7,7,l2,0.0009

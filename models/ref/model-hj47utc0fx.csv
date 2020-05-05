@@ -1,6 +1,0 @@
-3,1000,992,is_categorical_crossentropy,Adam
-dense,tanh,32
-dense,tanh,256
-flatten
-flatten
-conv2d,selu,4,7,7,l1,0.0001

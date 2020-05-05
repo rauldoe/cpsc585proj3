@@ -1,8 +1,0 @@
-3,1000,1838,mean_absolute_percentage_error,Nadam
-dense,softplus,2048
-dense,elu,2048
-conv2d,softplus,512,3,3,,
-dense,hard_sigmoid,16
-dropout,0.500000
-conv2d,relu,128,5,5,,
-conv2d,exponential,8,9,9,l2,0.001

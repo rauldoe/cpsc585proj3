@@ -1,5 +1,0 @@
-3,1000,838,is_categorical_crossentropy,SGD
-maxpooling2d,8,8
-dense,softsign,512
-conv2d,hard_sigmoid,32,3,3,l1,0.0009
-dense,softplus,1024

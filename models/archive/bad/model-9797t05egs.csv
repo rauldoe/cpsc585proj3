@@ -1,5 +1,0 @@
-3,1000,1880,kullback_leibler_divergence,Adagrad
-maxpooling2d,2,2
-conv2d,exponential,64,9,9,l2,0.0008
-dense,relu,64
-conv2d,hard_sigmoid,4,5,5,,

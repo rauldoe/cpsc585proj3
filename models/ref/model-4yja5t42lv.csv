@@ -1,8 +1,0 @@
-3,1000,102,cosine_proximity,Nadam
-conv2d,selu,256,9,9,l1,0.0006
-conv2d,softsign,32,9,9,l2,0.0004
-dense,selu,16
-flatten
-dropout,0.500000
-conv2d,selu,512,3,3,,
-conv2d,sigmoid,8,9,9,l2,0.0002
