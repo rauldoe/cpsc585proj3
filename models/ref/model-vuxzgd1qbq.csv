@@ -1,0 +1,3 @@
+3,1000,1313,categorical_crossentropy,SGD
+maxpooling2d,2,2
+conv2d,hard_sigmoid,4,5,5,,

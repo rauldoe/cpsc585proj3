@@ -1,0 +1,4 @@
+3,1000,762,mean_absolute_error,Adamax
+dense,softplus,2048
+flatten
+conv2d,elu,32,3,3,l2,0.0003

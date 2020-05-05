@@ -1,7 +1,0 @@
-3,1000,877,binary_crossentropy,Adamax,5,5
-dropout,0.400000
-flatten
-maxpooling2d,8,8
-dense,linear,32
-dense,hard_sigmoid,2048
-conv2d,tanh,8,l1,0.000900

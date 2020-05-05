@@ -1,6 +1,0 @@
-3,1000,548,poisson,SGD,1,1
-dropout,0.500000
-flatten
-dropout,0.400000
-dense,exponential,4
-conv2d,hard_sigmoid,8,l1,0.001000

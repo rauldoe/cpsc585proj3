@@ -1,9 +1,0 @@
-3,1000,1982,mean_absolute_percentage_error,Adam,5,5
-maxpooling2d,4,4
-flatten
-dense,elu,4
-dropout,0.050000
-conv2d,elu,512,l2,0.000100
-conv2d,relu,8,l2,0.000500
-dropout,0.500000
-dense,exponential,32

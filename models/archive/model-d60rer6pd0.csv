@@ -1,6 +1,0 @@
-3,1000,950,hinge,Adam,7,7
-dense,selu,4
-flatten
-conv2d,relu,32,l2,0.000900
-flatten
-conv2d,softmax,64,l2,0.000100

@@ -1,0 +1,8 @@
+3,1000,1539,hinge,Adadelta
+flatten
+dense,selu,256
+dense,elu,2048
+conv2d,relu,32,7,7,l2,0.0006
+maxpooling2d,8,8
+conv2d,softsign,2048,3,3,,
+conv2d,hard_sigmoid,512,5,5,l1,0.0001

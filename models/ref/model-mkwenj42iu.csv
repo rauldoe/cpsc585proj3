@@ -1,0 +1,12 @@
+3,1000,685,squared_hinge,Adagrad
+dropout,0.250000
+maxpooling2d,4,4
+maxpooling2d,8,8
+dropout,0.250000
+dropout,0.500000
+conv2d,relu,16,3,3,l2,0.0008
+maxpooling2d,4,4
+conv2d,softsign,64,5,5,l1,0.0007
+conv2d,softplus,8,5,5,l1,0.0005
+dropout,0.250000
+dense,sigmoid,1024

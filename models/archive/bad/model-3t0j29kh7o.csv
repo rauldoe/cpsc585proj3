@@ -1,0 +1,10 @@
+3,1000,1804,mean_squared_error,Adam
+flatten
+dropout,0.250000
+maxpooling2d,8,8
+dropout,0.250000
+maxpooling2d,2,2
+dense,softmax,256
+flatten
+conv2d,softsign,4,3,3,l2,0.0008
+dense,relu,16

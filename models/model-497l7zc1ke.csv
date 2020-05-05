@@ -1,8 +1,0 @@
-3,1000,1648,squared_hinge,RMSprop
-maxpooling2d,4,4
-maxpooling2d,2,2
-flatten
-maxpooling2d,4,4
-flatten
-flatten
-conv2d,hard_sigmoid,256,9,9,,

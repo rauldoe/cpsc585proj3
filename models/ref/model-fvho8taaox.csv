@@ -1,0 +1,8 @@
+3,1000,702,hinge,SGD
+flatten
+dense,linear,16
+conv2d,relu,1024,9,9,,
+dense,elu,32
+dropout,0.250000
+dropout,0.500000
+conv2d,linear,256,5,5,l2,0.0006

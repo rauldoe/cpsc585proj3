@@ -1,8 +1,0 @@
-3,1000,1542,poisson,RMSprop
-maxpooling2d,8,8
-maxpooling2d,4,4
-dense,softsign,64
-flatten
-maxpooling2d,2,2
-conv2d,selu,256,7,7,l1,0.0007
-dense,elu,16

@@ -1,0 +1,9 @@
+3,1000,523,kullback_leibler_divergence,Adadelta
+dropout,0.250000
+flatten
+flatten
+flatten
+conv2d,selu,256,9,9,,
+dense,elu,16
+maxpooling2d,8,8
+dense,sigmoid,4

@@ -1,8 +1,0 @@
-3,1000,473,poisson,Adadelta
-conv2d,linear,8,3,3,l1,0.001
-maxpooling2d,8,8
-conv2d,relu,16,7,7,,
-maxpooling2d,8,8
-dense,softplus,128
-maxpooling2d,2,2
-conv2d,relu,16,9,9,l2,0.0006

@@ -1,8 +1,0 @@
-3,1000,1311,kullback_leibler_divergence,Adadelta
-conv2d,linear,128,1,1,l1,0.0008
-dense,elu,64
-maxpooling2d,8,8
-conv2d,softmax,16,5,5,,
-dropout,0.500000
-conv2d,softplus,128,3,3,l1,0.0009
-dense,sigmoid,128

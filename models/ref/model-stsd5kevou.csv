@@ -1,0 +1,3 @@
+3,1000,1116,categorical_hinge,Adamax
+dropout,0.500000
+dense,selu,2048

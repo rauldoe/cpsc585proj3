@@ -1,8 +1,0 @@
-3,1000,834,logcosh,Adadelta
-conv2d,elu,512,7,7,l1,0.0003
-dense,tanh,32
-dropout,0.250000
-dense,tanh,1024
-flatten
-maxpooling2d,2,2
-dense,selu,16

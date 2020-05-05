@@ -1,0 +1,7 @@
+3,1000,1446,mean_absolute_error,Adamax
+dropout,0.250000
+conv2d,sigmoid,4,1,1,l1,0.0004
+dropout,0.250000
+flatten
+dense,softsign,32
+dense,elu,4

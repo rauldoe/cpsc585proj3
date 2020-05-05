@@ -1,8 +1,0 @@
-3,1000,225,huber_loss,RMSprop
-dense,sigmoid,64
-flatten
-dense,softsign,256
-dense,softmax,512
-dropout,0.250000
-maxpooling2d,4,4
-dense,tanh,256

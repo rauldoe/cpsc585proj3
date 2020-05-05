@@ -1,8 +1,0 @@
-3,1000,324,mean_squared_error,Adadelta
-dropout,0.250000
-conv2d,tanh,2048,9,9,l1,0.0007
-maxpooling2d,8,8
-maxpooling2d,2,2
-dropout,0.250000
-dense,selu,512
-dense,exponential,256

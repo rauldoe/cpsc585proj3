@@ -1,0 +1,6 @@
+3,1000,198,logcosh,Adagrad
+maxpooling2d,2,2
+flatten
+conv2d,softplus,1024,1,1,l2,0.0004
+flatten
+dense,selu,512

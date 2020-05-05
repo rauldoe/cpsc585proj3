@@ -1,0 +1,4 @@
+3,1000,1041,mean_squared_error,Adam
+dropout,0.500000
+dense,sigmoid,16
+conv2d,selu,64,7,7,,

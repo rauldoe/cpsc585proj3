@@ -1,0 +1,3 @@
+3,1000,1047,huber_loss,RMSprop
+dense,relu,512
+conv2d,relu,32,1,1,,

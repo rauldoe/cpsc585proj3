@@ -1,9 +1,0 @@
-3,1000,148,categorical_hinge,Adam,5,5
-maxpooling2d,4,4
-maxpooling2d,8,8
-flatten
-dropout,0.100000
-flatten
-maxpooling2d,4,4
-maxpooling2d,4,4
-conv2d,elu,2048,l1,0.000100

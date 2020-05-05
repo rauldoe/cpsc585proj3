@@ -1,8 +1,0 @@
-3,1000,37,mean_absolute_percentage_error,Nadam
-dense,elu,4
-dense,sigmoid,256
-flatten
-dense,selu,1024
-maxpooling2d,2,2
-dense,elu,2048
-conv2d,selu,2048,5,5,l2,0.0004

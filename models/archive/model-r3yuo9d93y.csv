@@ -1,8 +1,0 @@
-3,1000,106,sparse_categorical_crossentropy,Adadelta,3,3
-maxpooling2d,2,2
-dense,elu,8
-dense,selu,64
-dense,softsign,512
-dropout,0.500000
-dropout,0.350000
-dense,selu,256

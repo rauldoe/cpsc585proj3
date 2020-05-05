@@ -1,8 +1,0 @@
-3,1000,817,kullback_leibler_divergence,RMSprop,3,3
-dropout,0.450000
-maxpooling2d,4,4
-dense,elu,128
-dense,softplus,2048
-dense,relu,512
-flatten
-dense,exponential,64

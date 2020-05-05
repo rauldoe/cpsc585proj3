@@ -1,0 +1,15 @@
+3,1000,1835,kullback_leibler_divergence,RMSprop
+conv2d,softmax,256,5,5,l2,0.0007
+flatten
+dense,sigmoid,256
+dense,relu,256
+dense,softplus,128
+dropout,0.500000
+flatten
+flatten
+maxpooling2d,4,4
+maxpooling2d,4,4
+conv2d,softplus,2048,5,5,l2,0.0006
+maxpooling2d,4,4
+maxpooling2d,2,2
+conv2d,softplus,128,1,1,l1,0.0004

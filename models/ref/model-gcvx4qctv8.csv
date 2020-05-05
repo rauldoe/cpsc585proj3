@@ -1,0 +1,11 @@
+3,1000,1412,binary_crossentropy,Adam
+flatten
+maxpooling2d,4,4
+flatten
+dense,hard_sigmoid,4
+flatten
+maxpooling2d,8,8
+dense,exponential,8
+dropout,0.500000
+maxpooling2d,4,4
+conv2d,softplus,8,9,9,,

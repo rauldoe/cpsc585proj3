@@ -1,0 +1,4 @@
+3,1000,1617,hinge,RMSprop
+flatten
+dropout,0.500000
+conv2d,softsign,256,3,3,l1,0.0007

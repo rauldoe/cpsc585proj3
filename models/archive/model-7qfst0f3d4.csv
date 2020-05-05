@@ -1,4 +1,0 @@
-3,1000,1409,cosine_proximity,Nadam,1,1
-dense,softsign,8
-conv2d,sigmoid,128,l2,0.000100
-dense,exponential,32

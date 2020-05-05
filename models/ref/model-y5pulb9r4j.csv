@@ -1,0 +1,8 @@
+3,1000,1006,mean_absolute_percentage_error,Adadelta
+conv2d,exponential,16,9,9,l1,0.0008
+dropout,0.500000
+conv2d,selu,512,9,9,l2,0.0006
+maxpooling2d,4,4
+dropout,0.500000
+flatten
+dense,hard_sigmoid,32

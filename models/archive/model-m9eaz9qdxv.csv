@@ -1,9 +1,0 @@
-3,1000,322,sparse_categorical_crossentropy,SGD,1,1
-conv2d,sigmoid,1024,l2,0.000800
-conv2d,softmax,128,l2,0.000200
-conv2d,relu,256,l2,0.000800
-maxpooling2d,2,2
-dropout,0.350000
-conv2d,linear,64,l2,0.000600
-dropout,0.400000
-conv2d,hard_sigmoid,4,l1,0.000700

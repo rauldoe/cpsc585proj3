@@ -1,9 +1,0 @@
-3,1000,1687,logcosh,SGD,1,1
-dropout,0.100000
-maxpooling2d,2,2
-flatten
-maxpooling2d,4,4
-maxpooling2d,2,2
-conv2d,relu,64,l2,0.000100
-dense,softsign,1024
-dense,elu,512

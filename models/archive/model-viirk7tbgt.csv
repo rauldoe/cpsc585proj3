@@ -1,6 +1,0 @@
-3,1000,295,mean_squared_logarithmic_error,Adadelta,1,1
-dropout,0.350000
-flatten
-conv2d,selu,2048,l2,0.000400
-dense,tanh,8
-conv2d,exponential,2048,l2,0.000400

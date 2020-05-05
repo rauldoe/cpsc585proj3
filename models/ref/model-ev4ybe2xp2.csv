@@ -1,0 +1,7 @@
+3,1000,284,huber_loss,Adagrad
+conv2d,tanh,1024,1,1,l1,0.0003
+conv2d,softmax,256,5,5,l2,0.0008
+conv2d,hard_sigmoid,1024,1,1,l2,0.0003
+dense,relu,2048
+flatten
+dense,elu,8

@@ -1,8 +1,0 @@
-3,1000,966,cosine_proximity,Nadam
-conv2d,softsign,1024,3,3,l1,0.0008
-dense,tanh,1024
-flatten
-dropout,0.250000
-flatten
-flatten
-conv2d,hard_sigmoid,128,1,1,l2,0.0003

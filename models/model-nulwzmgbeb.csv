@@ -1,8 +1,0 @@
-3,1000,216,hinge,Adam
-dropout,0.500000
-flatten
-dropout,0.250000
-dense,exponential,512
-maxpooling2d,4,4
-dense,exponential,8
-dense,relu,16

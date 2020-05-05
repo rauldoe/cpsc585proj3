@@ -1,0 +1,9 @@
+3,1000,1421,mean_absolute_error,Adadelta
+dense,elu,256
+maxpooling2d,2,2
+flatten
+conv2d,elu,256,7,7,,
+maxpooling2d,4,4
+maxpooling2d,2,2
+flatten
+conv2d,selu,32,1,1,l2,0.0005

@@ -1,8 +1,0 @@
-3,1000,404,sparse_categorical_crossentropy,SGD
-conv2d,selu,256,7,7,l1,0.0009
-conv2d,selu,8,1,1,,
-flatten
-flatten
-maxpooling2d,4,4
-conv2d,relu,32,1,1,l2,0.001
-conv2d,softplus,32,7,7,l1,0.0006

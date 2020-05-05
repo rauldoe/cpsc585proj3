@@ -1,8 +1,0 @@
-3,1000,1393,is_categorical_crossentropy,SGD
-dense,relu,1024
-conv2d,sigmoid,32,7,7,,
-conv2d,relu,256,7,7,l1,0.0001
-flatten
-dropout,0.250000
-flatten
-dense,selu,2048

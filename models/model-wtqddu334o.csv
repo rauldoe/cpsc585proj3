@@ -1,8 +1,0 @@
-3,1000,1766,categorical_hinge,RMSprop
-dense,relu,2048
-dropout,0.500000
-dropout,0.500000
-conv2d,selu,4,3,3,l2,0.0001
-dense,softplus,32
-dropout,0.250000
-conv2d,elu,128,1,1,l1,0.0006

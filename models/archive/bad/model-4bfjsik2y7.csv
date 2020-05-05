@@ -1,0 +1,5 @@
+3,1000,1395,categorical_hinge,Adagrad
+flatten
+dense,softmax,32
+maxpooling2d,8,8
+conv2d,exponential,1024,3,3,,

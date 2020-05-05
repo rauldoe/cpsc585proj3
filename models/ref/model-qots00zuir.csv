@@ -1,0 +1,3 @@
+3,1000,1773,squared_hinge,Nadam
+maxpooling2d,4,4
+dense,hard_sigmoid,1024

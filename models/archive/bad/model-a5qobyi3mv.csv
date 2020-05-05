@@ -1,0 +1,5 @@
+3,1000,1607,categorical_hinge,Adadelta
+dropout,0.250000
+flatten
+conv2d,tanh,256,3,3,l1,0.0008
+dense,softmax,8

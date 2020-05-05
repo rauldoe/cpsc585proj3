@@ -1,0 +1,10 @@
+3,1000,905,kullback_leibler_divergence,Adam
+dense,exponential,16
+dropout,0.250000
+flatten
+dropout,0.250000
+dense,elu,32
+maxpooling2d,8,8
+flatten
+dense,relu,16
+conv2d,elu,256,7,7,,

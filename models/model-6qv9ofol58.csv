@@ -1,8 +1,0 @@
-3,1000,1843,kullback_leibler_divergence,Adam
-dense,sigmoid,2048
-flatten
-conv2d,softsign,4,3,3,l1,0.0005
-flatten
-dense,relu,64
-dropout,0.250000
-conv2d,selu,1024,5,5,,

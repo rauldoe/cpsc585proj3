@@ -1,0 +1,14 @@
+3,1000,835,squared_hinge,Adam
+dense,selu,16
+flatten
+dense,linear,16
+dropout,0.250000
+flatten
+maxpooling2d,4,4
+dense,sigmoid,4
+dense,relu,128
+dropout,0.250000
+flatten
+dropout,0.500000
+dense,softplus,4
+conv2d,softplus,512,7,7,,

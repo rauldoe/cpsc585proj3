@@ -1,8 +1,0 @@
-3,1000,812,hinge,Adagrad,1,1
-flatten
-maxpooling2d,8,8
-dropout,0.300000
-dropout,0.100000
-dropout,0.350000
-dropout,0.050000
-conv2d,softplus,32,l1,0.000600

@@ -1,0 +1,13 @@
+3,1000,856,is_categorical_crossentropy,RMSprop
+conv2d,relu,1024,7,7,,
+conv2d,relu,32,9,9,l2,0.0009
+flatten
+maxpooling2d,8,8
+dense,softplus,32
+dropout,0.250000
+flatten
+flatten
+dense,tanh,512
+dropout,0.500000
+flatten
+dense,softsign,512

@@ -1,9 +1,0 @@
-3,1000,1323,categorical_hinge,RMSprop,5,5
-dropout,0.100000
-maxpooling2d,8,8
-flatten
-dropout,0.250000
-dense,linear,1024
-conv2d,sigmoid,32,l2,0.000500
-dense,elu,1024
-dense,linear,64

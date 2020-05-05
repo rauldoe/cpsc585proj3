@@ -1,8 +1,0 @@
-3,1000,1816,logcosh,Adam
-maxpooling2d,4,4
-conv2d,sigmoid,64,7,7,l1,0.0005
-maxpooling2d,2,2
-conv2d,softplus,512,7,7,l1,0.0002
-dense,softmax,64
-conv2d,softsign,32,5,5,l1,0.0005
-dense,relu,4

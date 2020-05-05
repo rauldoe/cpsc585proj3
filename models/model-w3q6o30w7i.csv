@@ -1,8 +1,0 @@
-3,1000,818,binary_crossentropy,RMSprop
-flatten
-conv2d,selu,32,1,1,l1,0.0002
-dropout,0.250000
-dropout,0.250000
-conv2d,tanh,256,5,5,,
-conv2d,tanh,1024,7,7,,
-conv2d,exponential,64,1,1,l1,0.0007

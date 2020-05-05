@@ -1,0 +1,16 @@
+3,1000,24,categorical_hinge,Adamax
+dropout,0.500000
+dense,softsign,32
+dropout,0.500000
+flatten
+flatten
+flatten
+dense,elu,32
+dropout,0.500000
+dense,elu,256
+flatten
+dense,selu,64
+conv2d,softplus,2048,7,7,,
+dropout,0.250000
+dropout,0.250000
+conv2d,linear,64,9,9,l2,0.0004

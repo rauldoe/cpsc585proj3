@@ -1,0 +1,11 @@
+3,1000,1193,mean_absolute_error,SGD
+flatten
+conv2d,tanh,32,9,9,l2,0.0008
+flatten
+flatten
+dense,elu,32
+dense,softplus,8
+dropout,0.500000
+dense,softplus,512
+flatten
+conv2d,softmax,64,7,7,l2,0.0005

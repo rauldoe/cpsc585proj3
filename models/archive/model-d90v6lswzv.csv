@@ -1,8 +1,0 @@
-3,1000,23,hinge,RMSprop,7,7
-dense,relu,64
-dense,tanh,8
-conv2d,softmax,32,l2,0.000800
-maxpooling2d,8,8
-dense,hard_sigmoid,64
-flatten
-conv2d,softplus,1024,l1,0.000400

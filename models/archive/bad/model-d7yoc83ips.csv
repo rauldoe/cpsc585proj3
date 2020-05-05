@@ -1,0 +1,9 @@
+3,1000,1284,logcosh,Nadam
+flatten
+dense,sigmoid,2048
+dropout,0.250000
+dense,exponential,64
+dropout,0.250000
+flatten
+maxpooling2d,2,2
+dense,linear,8

@@ -1,0 +1,3 @@
+3,1000,1107,is_categorical_crossentropy,Adadelta
+maxpooling2d,4,4
+conv2d,sigmoid,4,5,5,,

@@ -1,0 +1,15 @@
+3,1000,1481,binary_crossentropy,Adam
+dense,softmax,4
+flatten
+maxpooling2d,2,2
+conv2d,hard_sigmoid,1024,3,3,,
+flatten
+conv2d,elu,8,3,3,l2,0.001
+conv2d,hard_sigmoid,512,7,7,l1,0.0004
+maxpooling2d,2,2
+dropout,0.250000
+dropout,0.500000
+dense,hard_sigmoid,2048
+dropout,0.500000
+flatten
+dense,softmax,64

@@ -1,8 +1,0 @@
-3,1000,525,sparse_categorical_crossentropy,Adagrad
-maxpooling2d,2,2
-maxpooling2d,8,8
-dropout,0.250000
-dense,sigmoid,4
-dropout,0.250000
-flatten
-dense,selu,256

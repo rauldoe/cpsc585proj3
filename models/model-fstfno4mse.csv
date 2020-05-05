@@ -1,8 +1,0 @@
-3,1000,1012,categorical_hinge,Adam
-conv2d,exponential,2048,5,5,,
-conv2d,softsign,64,3,3,,
-conv2d,softsign,1024,7,7,,
-dropout,0.250000
-maxpooling2d,8,8
-conv2d,softmax,2048,3,3,l2,0.0001
-dense,softplus,2048

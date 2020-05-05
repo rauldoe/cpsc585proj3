@@ -1,5 +1,0 @@
-3,1000,856,binary_crossentropy,SGD,7,7
-dropout,0.050000
-dense,softplus,1024
-flatten
-conv2d,softmax,32,l2,0.000600

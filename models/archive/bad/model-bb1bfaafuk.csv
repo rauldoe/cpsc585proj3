@@ -1,0 +1,7 @@
+3,1000,1573,mean_squared_error,Adadelta
+dropout,0.500000
+dense,softsign,16
+maxpooling2d,4,4
+dense,softmax,64
+maxpooling2d,4,4
+conv2d,relu,8,5,5,,

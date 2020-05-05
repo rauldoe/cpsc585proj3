@@ -1,7 +1,0 @@
-3,1000,611,is_categorical_crossentropy,Adadelta,3,3
-dense,selu,32
-dense,linear,512
-flatten
-dropout,0.100000
-flatten
-dense,elu,1024

@@ -1,5 +1,0 @@
-3,1000,114,mean_absolute_percentage_error,SGD,3,3
-maxpooling2d,2,2
-dropout,0.350000
-dropout,0.050000
-dense,relu,8

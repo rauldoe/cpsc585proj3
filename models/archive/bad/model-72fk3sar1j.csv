@@ -1,0 +1,9 @@
+3,1000,1226,binary_crossentropy,Adamax
+conv2d,selu,32,9,9,,
+flatten
+dense,elu,2048
+flatten
+dense,softmax,128
+flatten
+dropout,0.500000
+conv2d,softsign,1024,5,5,,

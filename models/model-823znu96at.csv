@@ -1,8 +1,0 @@
-3,1000,589,mean_absolute_percentage_error,Adagrad
-conv2d,sigmoid,32,3,3,l2,0.0003
-maxpooling2d,2,2
-dense,softsign,4
-dropout,0.250000
-dropout,0.250000
-dense,softsign,128
-dense,elu,8
