@@ -58,7 +58,9 @@ class Generator:
 
     def randomLayer(self, i, layerCount):
 
-        if (i<layerCount-1):
+        if (i==0):
+            layerName = 'conv2d'
+        elif (i<layerCount-1):
             layerName = Utility.getRandom(self.layers)[0]
         else:
             allowed = ['conv2d', 'dense']

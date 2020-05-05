@@ -1,0 +1,8 @@
+3,1000,1471,logcosh,SGD
+conv2d,softsign,1024,1,1,l1,0.0006
+dropout,0.250000
+flatten
+dropout,0.250000
+maxpooling2d,2,2
+dense,sigmoid,1024
+dense,elu,8

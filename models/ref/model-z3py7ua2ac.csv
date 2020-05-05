@@ -1,0 +1,8 @@
+3,1000,1031,binary_crossentropy,Adamax
+dense,softplus,2048
+dropout,0.250000
+conv2d,sigmoid,2048,1,1,l2,0.0004
+dense,selu,32
+flatten
+dense,hard_sigmoid,2048
+dense,exponential,2048

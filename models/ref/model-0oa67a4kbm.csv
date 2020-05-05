@@ -1,0 +1,8 @@
+3,1000,945,sparse_categorical_crossentropy,Adagrad
+flatten
+conv2d,selu,16,7,7,,
+dense,elu,512
+conv2d,tanh,32,7,7,l2,0.001
+maxpooling2d,8,8
+maxpooling2d,4,4
+dense,linear,512

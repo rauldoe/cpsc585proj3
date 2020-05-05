@@ -1,0 +1,8 @@
+3,1000,343,mean_absolute_error,SGD
+dense,hard_sigmoid,16
+dropout,0.250000
+maxpooling2d,8,8
+flatten
+dense,tanh,32
+dense,softmax,512
+dense,softplus,16

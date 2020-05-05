@@ -1,0 +1,8 @@
+3,1000,1561,categorical_hinge,Adadelta
+dense,tanh,128
+flatten
+dense,softplus,1024
+flatten
+dense,sigmoid,4
+conv2d,softplus,32,9,9,,
+conv2d,sigmoid,2048,7,7,l1,0.0003

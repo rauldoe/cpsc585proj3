@@ -1,0 +1,8 @@
+3,1000,1517,huber_loss,Nadam
+conv2d,softmax,256,3,3,l2,0.0007
+conv2d,softplus,8,5,5,l2,0.0005
+maxpooling2d,2,2
+dense,elu,8
+dense,softmax,128
+dense,tanh,512
+dense,relu,4

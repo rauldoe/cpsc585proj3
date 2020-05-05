@@ -1,0 +1,8 @@
+3,1000,160,hinge,RMSprop
+flatten
+dense,exponential,64
+maxpooling2d,8,8
+maxpooling2d,2,2
+flatten
+dense,selu,8
+dense,relu,64

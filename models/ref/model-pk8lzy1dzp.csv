@@ -1,0 +1,8 @@
+3,1000,1688,logcosh,RMSprop
+conv2d,linear,512,1,1,,
+flatten
+flatten
+dense,sigmoid,8
+dense,exponential,128
+flatten
+dense,tanh,32

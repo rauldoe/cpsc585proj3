@@ -1,0 +1,8 @@
+3,1000,1061,cosine_proximity,Nadam
+maxpooling2d,2,2
+dropout,0.500000
+maxpooling2d,4,4
+conv2d,softmax,1024,9,9,l2,0.001
+maxpooling2d,4,4
+maxpooling2d,2,2
+dense,softsign,2048

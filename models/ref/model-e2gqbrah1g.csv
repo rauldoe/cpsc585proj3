@@ -1,0 +1,8 @@
+3,1000,849,squared_hinge,RMSprop
+flatten
+dropout,0.500000
+dropout,0.500000
+dropout,0.250000
+dense,exponential,512
+flatten
+dense,hard_sigmoid,256

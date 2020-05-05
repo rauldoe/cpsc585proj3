@@ -1,0 +1,8 @@
+3,1000,1760,sparse_categorical_crossentropy,Adadelta
+dense,hard_sigmoid,8
+flatten
+flatten
+conv2d,elu,8,5,5,,
+conv2d,softsign,512,3,3,l1,0.001
+flatten
+conv2d,linear,512,1,1,l2,0.0005

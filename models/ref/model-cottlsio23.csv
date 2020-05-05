@@ -1,0 +1,8 @@
+3,1000,563,mean_squared_logarithmic_error,SGD
+conv2d,tanh,8,3,3,l1,0.0009
+dropout,0.250000
+dropout,0.500000
+dense,hard_sigmoid,16
+dropout,0.500000
+flatten
+conv2d,elu,256,1,1,l1,0.001

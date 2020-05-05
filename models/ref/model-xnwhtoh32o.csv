@@ -1,0 +1,8 @@
+3,1000,315,is_categorical_crossentropy,Adagrad
+dropout,0.500000
+flatten
+dropout,0.500000
+maxpooling2d,8,8
+dense,linear,16
+maxpooling2d,2,2
+conv2d,selu,256,5,5,l2,0.0005
